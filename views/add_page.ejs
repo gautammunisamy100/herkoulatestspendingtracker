@@ -1,0 +1,56 @@
+<% include partials/header %>
+<% include partials/navbar %>
+
+<div class="container">
+    <div class="row shadow">
+    <div class= "col-sm-12">
+      <form id="addTransactionForm" >
+      <h2>Add Transaction</h2>
+      <label >Amount</label>
+      <input type="number" class="form-control mb-2" id="addAmount" placeholder="Enter amount" min="1" max="100000000000" required/>
+      <label for="selectType" >Transaction Type</label>
+      <select name="type" id="selectType" class="custom-select mb-2">
+         <option value="Expense">Expense</option>
+         <option value="Income">Income</option>
+      </select>
+      <label for="selectCategory" >Category</label>
+      <select name="category" id="selectCategory" class="custom-select mb-2"></select>
+      <label >Date</label>
+      <input type="date" class="form-control mb-2" id="addDate" />
+      <label >Small Note</label>
+      <input type="text" class="form-control mb-2" id="addNote" placeholder="Enter small note" maxlength="40" />
+      <input type="submit" value="Add" class="btn btn-primary btn-block mt-2 mb-2">
+      </form>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row shadow">
+    <div class= "col-sm-12">
+      <form id="addCDTransactionForm" >
+      <h2>Add Credit/Debt </h2>
+      <p>If you owe money to other then you are a debtor then select debit has Transaction Type
+      and if Other People owed you money then you  are a creditor select credit has Transaction Type.</p>
+      <label >Amount</label>
+      <input type="number" class="form-control mb-2" id="addCDAmount" placeholder="Enter amount" min="1" max="100000000000" required/>
+      <label for="selectCDType" >Transaction Type</label>
+      <select name="type" id="selectCDType" class="custom-select mb-2">
+         <option value="Credit">Credit</option>
+         <option value="Debt">Debt</option>
+      </select>
+      <label >Person</label>
+      <input type="text" class="form-control mb-2" id="addCDPerson" placeholder="Enter person name" maxlength="20"  required/>
+      <label >DueDate</label>
+      <input type="date" class="form-control mb-2" id="addCDDate" />
+      <label >Small Note</label>
+      <input type="text" class="form-control mb-2" id="addCDNote" placeholder="Enter small note" maxlength="50" />
+      <input type="submit" value="Add" class="btn btn-primary btn-block mt-2 mb-2">
+      </form>
+    </div>
+    </div>
+</div>
+
+
+<% include partials/footer %>
+<script type="text/javascript" src ="/jquery/add-transaction-page.js"></script>

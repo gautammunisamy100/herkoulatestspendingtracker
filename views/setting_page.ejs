@@ -1,0 +1,40 @@
+<% include partials/header %>
+<% include partials/navbar %>
+
+<div class="container">
+  <div class="row">
+       <div class="col-sm-12 shadow mb-2">
+          <h3 class="display-5 ">Change Currency</h3>
+          <form class="form" id="currencyUpdateForm" >
+            <label>Select Currency Type: </label>
+            <select name="type" id="selectCurrency" class="custom-select">
+            </select>
+            <input type="submit" value="Update Currency" class="btn btn-primary btn-block mt-2 mb-2">
+         </form>
+       </div>
+          <div class="col-sm-12 shadow mb-2">
+          <h3 class="display-5 ">Change Email</h3>
+          <form class="form" id="emailUpdateForm" >
+             <label>Current Password:</label>
+             <input id="emailCurrentPassword"  type="password" class="form-control" placeholder="Current Password"  minlength="4" maxlength="20" required >
+             <label>Set Email: </label>
+             <input id="settingEmailAddress"  type="text" class="form-control" placeholder="Email Address"   maxlength="40" required >
+             <input type="submit" value="Update Email" class="btn btn-primary btn-block mt-2 mb-2">
+         </form>
+       </div>
+       <div class="col-sm-12 shadow mb-2">
+            <h3 class="display-5">Change Password</h3>
+            <form class="form" id="passwordUpdateForm"  >
+                <label>Current Password:</label>
+                <input id="settingCurrentPassword"  type="password" class="form-control" placeholder="Current Password"  minlength="4" maxlength="20" required >
+                <label>New Password:</label>
+                <input id="settingNewPassword"  type="password" class="form-control" placeholder="New Password"  minlength="4" maxlength="20" required >
+                <label>Confirm New Password:</label>
+                <input id="settingConfirmNewPassword" type="password" class="form-control" placeholder="Confirm New Password"  minlength="4" maxlength="20" required>
+                <input type="submit" value="Update Password" class="btn btn-primary btn-block mt-2 mb-2">
+           </form>
+    </div>
+  </div>
+</div>
+<% include partials/footer %>
+<script type="text/javascript" src="/jquery/setting-page.js"></script>

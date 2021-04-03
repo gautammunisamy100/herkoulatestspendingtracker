@@ -1,0 +1,26 @@
+
+<% include partials/header %>
+<% include partials/navbar %>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-2 shadow" >
+       <% include partials/filter%>
+      </div>
+     <div class="col-md-12 shadow mb-2"" >
+        <div id="linechart"></div>
+     </div>
+      <div class="col-md-6 shadow mb-2"" >
+         <div id="chart"></div>
+      </div>
+      <div class="col-md-6  shadow mb-2"" >
+         <div id="piechart"></div>
+      </div>
+    </div>
+</div>
+
+<% include partials/footer %>
+<link type="text/css" rel="stylesheet" href="/apexcharts/apexcharts.css">
+<script type="text/javascript"  src="/apexcharts/apexcharts.js" ></script>
+<script type="text/javascript" src ="/jquery/filter-data.js"></script>
+<script type="text/javascript" src ="/jquery/analytic-page.js"></script>

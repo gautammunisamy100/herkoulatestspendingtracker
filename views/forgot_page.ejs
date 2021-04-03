@@ -1,0 +1,22 @@
+<% include partials/header %>
+<div class="divCenter shadow jumbotron">
+  <div class="container">
+  <h1 class="jumbotron-heading"> Forgot</h1>
+  <p class="lead"> Please Enter Either Registerd EmailAddress or Username</p>
+  <form id="forgotForm">
+  <div class="mb-1">
+    <input name="username" id="forgotUsername" type="text" class="form-control" placeholder="Enter Username" minlength="4"  maxlength="20" >
+  </div>
+  <div class=="mb-1">
+    <input name="emailAddress" id="forgotEmailAddress" type="text" class="form-control" placeholder="Enter EmailAddress"  maxlength="40" >
+  </div>
+  <div class=="mb-1">
+   <input type="submit" value="Send Mail" class="btn btn-primary btn-block">
+   </div>
+  </form>
+   <a href="/authpage" class="btn btn-primary my-2">Back To Login </a>
+  </div>
+</div>
+
+<% include partials/footer %>
+<script type="text/javascript" src="/jquery/forgot-page.js"></script>

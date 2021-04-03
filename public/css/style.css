@@ -1,0 +1,112 @@
+div {
+  padding: 2px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(233, 252, 242);
+  overflow: auto;
+}
+
+.navbar a:hover {
+  background-color: rgb(26, 201, 90);
+}
+
+.divCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(250, 246, 246);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  z-index: 100;
+}
+
+.inputdiv {
+  margin: 20px !important;
+  padding: 6px 10px;
+  border: none !important;
+  border-radius: 2px !important;
+}
+
+body.wait *,
+body.wait {
+  cursor: progress !important;
+  z-index: 200; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.loading {
+  width: 100%;
+  height: 6px;
+  position: relative;
+  animation-name: loading-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading-animation {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow
+    );
+  }
+  20% {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255)
+    );
+  }
+  40% {
+    background-image: linear-gradient(
+      to right,
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      to right,
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow
+    );
+  }
+  80% {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255)
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      to right,
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow,
+      rgba(0, 123, 255, 255),
+      yellow
+    );
+  }
+}

@@ -1,0 +1,40 @@
+2021/4/3 10:40:2
+     POST  /login
+     {"username":"bigboss","password":"bnigboss","remember":"true"}
+     {"status":400,"message":"Password is Wrong"} 
+2021/4/3 11:41:12
+     POST  /updateCDTransaction
+     {"id":"606806edcecc2f0020857763","status":"Pending","editable":"false"}
+     {} 
+2021/4/3 11:43:2
+     POST  /updateCDTransaction
+     {"id":"606806edcecc2f0020857763","status":"Recieved","editable":"false"}
+     {} 
+2021/4/3 11:44:24
+     POST  /updateCDTransaction
+     {"id":"606806edcecc2f0020857763","status":"Recieved","editable":"true"}
+     {} 
+2021/4/3 11:48:20
+     POST  /updateCDTransaction
+     {"id":"60680858e93ca411ecc61f6a","status":"Recieved","editable":"false"}
+     {} 
+2021/4/3 11:50:58
+     POST  /updateCDTransaction
+     {"id":"60680858e93ca411ecc61f6a","status":"Recieved","editable":"false"}
+     {} 
+2021/4/3 12:2:7
+     POST  /updateCDTransaction
+     {"id":"60680bbb771f242510cbab03","status":"Recieved","editable":"true"}
+     {"stringValue":"\"[Function: Boolean]\"","kind":"Boolean","path":"editable","reason":{"stringValue":"\"[Function: Boolean]\"","kind":"boolean"}} 
+2021/4/3 12:3:2
+     POST  /updateCDTransaction
+     {"id":"60680bbb771f242510cbab03","status":"Pending","editable":"true"}
+     {"stringValue":"\"[Function: Boolean]\"","kind":"Boolean","path":"editable","reason":{"stringValue":"\"[Function: Boolean]\"","kind":"boolean"}} 
+2021/4/3 12:3:9
+     POST  /updateCDTransaction
+     {"id":"60680bbb771f242510cbab03","status":"Pending","editable":"true"}
+     {"stringValue":"\"[Function: Boolean]\"","kind":"Boolean","path":"editable","reason":{"stringValue":"\"[Function: Boolean]\"","kind":"boolean"}} 
+2021/4/3 12:20:7
+     POST  /login
+     {"username":"bigboss","password":"bigboiss","remember":"true"}
+     {"status":400,"message":"Password is Wrong"} 

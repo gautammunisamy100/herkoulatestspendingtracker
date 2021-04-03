@@ -1,0 +1,25 @@
+      <form id="addTransactionForm" >
+      <h2>Add Transaction</h2>
+      <div class="mb-2">
+          <label >Amount</label>
+          <input type="number" class="form-control" id="addAmount" placeholder="Enter amount" min="1" max="1000000" required/>
+      </div>
+      <div class="mb-2">
+          <label for="selectType" >Transaction Type</label>
+          <select name="type" id="selectType" class="custom-select">
+             <option value="Expense">Expense</option>
+             <option value="Income">Income</option>
+          </select>
+      </div>
+      <div class="mb-2">
+            <label for="selectCategory" >Category</label>
+            <select name="category" id="selectCategory" class="custom-select"></select>
+      </div>
+      <div class="mb-2">
+         <label >Note</label>
+         <input type="text" class="form-control" id="addNote" placeholder="Enter small note" maxlength="40" />
+      </div>
+      <div class="p-2">
+         <input type="submit" value="Add" class="btn btn-primary btn-block">
+      </div>
+      </form>

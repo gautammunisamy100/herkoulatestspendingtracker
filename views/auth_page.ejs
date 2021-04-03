@@ -1,0 +1,41 @@
+<% include partials/header %>
+
+<div class="divCenter row shadow">
+
+<div class="col-sm-12">
+  <nav>
+    <div class="nav nav-tabs nav-fill " id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="navLoginTab" data-toggle="tab" href="#navLogin" role="tab" aria-controls="navLogin" aria-selected="true">Login</a>
+      <a class="nav-item nav-link" id="navRegisterTab" data-toggle="tab" href="#navRegister" role="tab" aria-controls="navRegister" aria-selected="false">Register</a>
+    </div>
+  </nav>
+  <div id="navLoading"></div>
+</div>
+
+<div class="col-sm-12">
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="navLogin" role="tabpanel" aria-labelledby="navLoginTab">
+  <form id="loginForm">
+  <h1 class="display-5 font-bold">Login</h1>
+  <input name="username" id="loginUsername" type="text" class="form-control mb-2" placeholder="Username" minlength="4"  maxlength="20" required autofocus>
+  <input name="password" id="loginPassword" type="password" class="form-control mb-2" placeholder="Password" minlength="4"  maxlength="20" required>
+  <label> <input id="loginRememberme" type="checkbox" value="remember-me" > Remember me </label>
+   <input type="submit"  value="Log in" class="btn btn-primary btn-block mt-2 mb-2">
+  </form>
+   <a href="/forgot" >Forgot Username/Password ?</a>
+  </div>
+  <div class="tab-pane fade" id="navRegister" role="tabpanel" aria-labelledby="navRegisterTab">
+   <form id="registerForm"  >
+    <h1 class="display-5 font-bold">Register</h1>
+    <input  id="registerUsername"  type="text" class="form-control mb-2" placeholder="Username" minlength="4"  maxlength="20" required autofocus>
+    <input  id="registerEmailAddress"  type="text" class="form-control mb-2" placeholder="Enter valid Email"  maxlength="40" required >
+    <input id="registerPassword"  type="password" class="form-control mb-2" placeholder="Password"  minlength="4" maxlength="20" required >
+    <input id="registerConfirmPassword" type="password" class="form-control mb-2" placeholder="Confirm Password"  minlength="4" maxlength="20" required>
+    <input type="submit" value="Register" class="btn btn-primary btn-block  mb-2">
+  </form>
+  </div>
+</div>
+</div>
+</div>
+<% include partials/footer%>
+<script type="text/javascript" src="/jquery/auth-page.js"></script>

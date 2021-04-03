@@ -1,0 +1,30 @@
+<form class="form" id="filter" >
+  <div class="row">
+  <div class="col-sm-3">
+  <label>StartDate </label>
+  <input type="date" id="startDateFilter" name="startDate" class="form-control" min="1997-01-01" max="2030-12-31">
+  </div>
+  <div class="col-sm-3">
+  <label>EndDate </label>
+  <input type="date" id="endDateFilter" name="endDate" class="form-control" >
+  </div>
+  <div class="col-sm-2">
+   <label>Type </label>
+  <select name="type" id="selectTypeFilter" class="custom-select">
+      <option value="">All</option>
+      <option value="Expense">Expense</option>
+      <option value="Income">Income</option>
+  </select>
+  </div>
+   <div class="col-sm-2">
+       <label>Category</label>
+       <select name="category" id="selectCategoryFilter" class="custom-select">
+       <option value="">All</option>
+       </select>
+  </div>
+  <div class="col-sm-2">
+  <label> Apply </label>
+  <button type="submit" class="btn btn-primary btn-block">Filter</button>
+  </div>
+  </div>
+</form>
